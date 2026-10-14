@@ -1,0 +1,47 @@
+{
+  "name": "Bancada PDF",
+  "short_name": "Bancada PDF",
+  "description": "Ferramentas de PDF no seu aparelho: juntar, dividir, comprimir e converter.",
+  "lang": "pt-BR",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#EDF0F6",
+  "theme_color": "#2B4BF2",
+  "categories": [
+    "productivity",
+    "utilities"
+  ],
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Juntar PDF",
+      "url": "juntar-pdf.html"
+    },
+    {
+      "name": "Comprimir PDF",
+      "url": "comprimir-pdf.html"
+    },
+    {
+      "name": "Word para PDF",
+      "url": "word-para-pdf.html"
+    }
+  ]
+}
