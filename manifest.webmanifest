@@ -36,6 +36,10 @@
       "url": "juntar-pdf.html"
     },
     {
+      "name": "Assinar PDF",
+      "url": "assinar-pdf.html"
+    },
+    {
       "name": "Comprimir PDF",
       "url": "comprimir-pdf.html"
     },

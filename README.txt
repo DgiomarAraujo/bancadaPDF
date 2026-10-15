@@ -8,9 +8,11 @@ BANCADA PDF — como publicar
    "instalar como app" e o uso offline.
 
 2) ANTES DE PUBLICAR, TROQUE OS MARCADORES
-   - SEU-DOMINIO.com.br  -> seu endereço real (index.html, sitemap.xml, robots.txt, privacidade etc.)
+   - O endereço do site (canonical, sitemap, robots) já aponta para
+     https://dgiomararaujo.github.io/bancadaPDF/. Quando tiver domínio próprio, mude a
+     constante BASE em build/build.js e rode:  node build/build.js
    - [SEU NOME OU EMPRESA] -> nome do responsável (privacidade.html e termos.html)
-   - contato@SEU-DOMINIO.com.br -> seu e-mail
+   - SEU-DOMINIO.com.br / contato@SEU-DOMINIO.com.br -> seu e-mail e domínio (privacidade.html, contato.html)
    (Dica: abra a pasta num editor e use "localizar e substituir em todos os arquivos".)
    Revise a Política de Privacidade e os Termos; eles são um modelo, não aconselhamento jurídico.
 
@@ -34,3 +36,10 @@ BANCADA PDF — como publicar
 
 5) ATUALIZAR
    Ao trocar arquivos, mude o nome do cache em sw.js (const V=...) para os visitantes receberem a versão nova.
+
+6) GERADOR DE PÁGINAS (build/build.js)
+   Gera index.html e as páginas das ferramentas novas, atualiza menu/tema/endereço nas
+   demais páginas, o sitemap, o manifest e a lista de arquivos do modo offline (sw.js).
+   Rode na pasta do site:  node build/build.js   (precisa de Node.js)
+   Para adicionar uma ferramenta: defina em assets/tools.js, escreva o texto em NEW (build.js),
+   inclua o id em CATS e rode o build.
